@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles/stockstyle.css">
+</head>
+<body>
+    <div id="query">
+        <form id="stocksymbol">
+            <input type="text" id="stockSymbol" required aria-required="true" placeholder="enter stock ticker..." autocomplete="off"/>
+            <button id="getdata">Collect Stock Data</button>
+            <div id="loadingIconContainer">
+                <i id="loadingIcon" class="fa fa-refresh fa-spin"></i>
+            </div>
+        </form>
+    </div>
+    <div id="financePlaceholder">
+        <div class="inner"></div>
+    </div>
+    <div id="graphPlaceholder">
+        <div id="inner"></div>
+    </div>
+    <script src="/scripts/jquery/dist/jquery.min.js"></script>
+    <script src="/scripts/d3/d3.min.js"></script>
+    <script src="/scripts/stockscript.js"></script>
+</body>
+</html>

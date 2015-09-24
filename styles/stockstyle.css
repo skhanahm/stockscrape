@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/font-awesome-4.4.0/fontawesome-webfont.eot?v=4.4.0');
+  src: url('../fonts/font-awesome-4.4.0/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('../fonts/font-awesome-4.4.0/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('../fonts/font-awesome-4.4.0/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('../fonts/font-awesome-4.4.0/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('../fonts/font-awesome-4.4.0/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font: 12px sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #ededed;
+}
+
+#query {
+    background-color: #2f2f2f;
+    background: linear-gradient(180deg, #2f2f2f 0%, #2f2f2f 80%, #ededed 100%);
+    padding: 20px 40px 30px 40px;
+}
+
+#query input[type="text"] {
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 1px #5b5b5b;
+    margin: 0px 20px;
+    width: 30%;
+    max-width: 400px;
+    min-width: 200px;
+    color: #d0d0d0;
+    vertical-align: bottom;
+    font-size: 30px;
+}
+
+#query button {
+    background-color: transparent;
+    color: #d0d0d0;
+    border: solid 1px #d0d0d0;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+#loadingIconContainer {
+    display: none;
+    margin: 0 10px;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 20px/1 FontAwesome;
+  font-size: 20px;
+  color: white;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-refresh:before {
+  content: "\f021";
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 1s infinite linear;
+  animation: fa-spin 1s infinite linear;
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+.fiftyMovingAverage {
+    fill: none;
+    stroke: green;
+    stroke-width: 1.5px;
+}
+
+.twoHundredMovingAverage {
+    fill: none;
+    stroke: red;
+    stroke-width: 1.5px;
+}
+
+.area {
+    fill: lightsteelblue;
+    stroke-width: 0;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+.focusClose circle {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+.focusFifty circle {
+    fill: none;
+    stroke: green;
+    stroke-width: 2px;
+}
+
+.focusTwoHundred circle {
+    fill: none;
+    stroke: red;
+    stroke-width: 2px;
+}
+
+.focusClose rect {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+    text-anchor: middle;
+}
+
+.focusFifty rect {
+    fill: none;
+    stroke: green;
+    stroke-width: 2px;
+    text-anchor: middle;
+}
+
+.focusTwoHundred rect {
+    fill: none;
+    stroke: red;
+    stroke-width: 2px;
+    text-anchor: middle;
+}
+
+#financePlaceholder {
+    display: table;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#financePlaceholder .inner {
+    width: 50%;
+    margin: 0 auto;
+    min-width: 400px;
+}
+
+#financePlaceholder .inner table {
+    width: 100%;
+}
+
+#financePlaceholder .inner table td {
+    padding: 5px 10px;
+}
+
+#financePlaceholder .inner tbody tr:nth-child(even) {
+    background-color: #ededed;
+}
+
+#financePlaceholder .inner tbody tr:nth-child(odd) {
+    background-color: #dbdbdb;
+}
+
+#financePlaceholder .inner tbody tr td:nth-child(even) {
+    width: 30%;
+}
+
+#financePlaceholder .inner tbody tr td:nth-child(odd) {
+    width: 20%;
+}
